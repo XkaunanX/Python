@@ -1,0 +1,184 @@
+{
+    "intenciones": [
+        {
+            "tag": "saludo",
+            "patron": [
+                "hola", "que tal", "como estas", "saludos", "buenas",
+                "que onda", "mucho gusto", "buenos dias", "buenas tardes",
+                "buenas noches", "hey"
+            ],
+            "respuesta": ["Hola", "Buenos dias", "¿Como estas"]
+        },
+        {
+            "tag": "nombre",
+            "patron": [
+                "como es tu nombre", "como te llamas", "me dices tu nombre",
+                "cual es tu nombre", "nombre", "como te dicen"
+            ],
+            "respuesta": ["Me llamo", "Mi nombre es"]
+        },
+        {
+            "tag": "despedida",
+            "patron": [
+                "adios", "hasta luego", "nos vemos", "chau", "hasta pronto",
+                "que tengas un buen dia", "cuidate", "nos estamos viendo"
+            ],
+            "respuesta": ["Adios", "Hasta pronto", "Que tengas un buen dia"]
+        },
+        {
+            "tag": "como_funciona",
+            "patron": [
+                "como funciona", "que hace", "me puedes explicar como funciona",
+                "en que consiste", "como me ayuda", "como debo usarlo"
+            ],
+            "respuesta": [
+                "Este es un chatbot creado para responder preguntas puedes preguntarme sobre varios temas",
+                "Funciona detectando tus intenciones y respondiendo de acuerdo con las respuestas programadas"
+            ]
+        },
+        {
+            "tag": "ayuda",
+            "patron": [
+                "necesito ayuda", "me ayudas", "puedes ayudarme", "necesito asistencia",
+                "tienes ayuda para esto", "quiero saber mas", "me explicas"
+            ],
+            "respuesta": [
+                "Claro en que puedo ayudarte",
+                "Estoy aqui para ayudarte que necesitas saber",
+                "Por supuesto dime en que te puedo asistir"
+            ]
+        },
+        {
+            "tag": "hora",
+            "patron": [
+                "que hora es", "me dices la hora", "hora actual", "a que hora es",
+                "puedes decirme la hora", "cual es la hora ahora"
+            ],
+            "respuesta": [
+                "Lo siento no puedo acceder a la hora actual",
+                "Puedes verificar la hora en tu dispositivo"
+            ]
+        },
+        {
+            "tag": "fecha",
+            "patron": [
+                "que fecha es", "me dices la fecha", "que dia es hoy", "dia de hoy",
+                "cual es la fecha actual", "fecha de hoy"
+            ],
+            "respuesta": [
+                "Lo siento no tengo acceso a la fecha actual",
+                "Puedes revisar la fecha en tu dispositivo"
+            ]
+        },
+        {
+            "tag": "clima",
+            "patron": [
+                "que clima hace", "como esta el clima", "que tiempo hace",
+                "hace frio", "hace calor", "como esta el tiempo", "que temperatura hace"
+            ],
+            "respuesta": [
+                "Lo siento no tengo acceso a informacion meteorologica",
+                "Te sugiero consultar una aplicacion de clima para mas detalles"
+            ]
+        },
+        {
+            "tag": "ubicacion",
+            "patron": [
+                "donde estas", "en que lugar estas", "donde te encuentras",
+                "me dices donde estas", "ubicacion"
+            ],
+            "respuesta": [
+                "Soy un bot no tengo una ubicacion fisica",
+                "Estoy en el servidor disponible en cualquier lugar"
+            ]
+        },
+        {
+            "tag": "gracias",
+            "patron": [
+                "gracias", "muchas gracias", "te agradezco", "te lo agradezco",
+                "gracias por tu ayuda", "te doy las gracias"
+            ],
+            "respuesta": ["De nada", "Con gusto", "Es un placer ayudarte"]
+        },
+        {
+            "tag": "problema",
+            "patron": [
+                "tengo un problema", "no entiendo", "algo no funciona",
+                "tengo un error", "mi dispositivo no responde", "ayuda con el problema"
+            ],
+            "respuesta": [
+                "Lo siento por los inconvenientes me puedes explicar el problema",
+                "Intentare ayudarte puedes darme mas detalles"
+            ]
+        },
+        {
+            "tag": "compras",
+            "patron": [
+                "quiero comprar", "donde puedo comprar", "tienes productos",
+                "me recomiendas algo para comprar", "me ayudas a comprar", "donde encuentro"
+            ],
+            "respuesta": [
+                "Lo siento no soy una tienda pero puedo ayudarte a buscar productos en linea",
+                "En que tipo de producto estas interesado Puedo ayudarte a buscar informacion"
+            ]
+        },
+        {
+            "tag": "peliculas",
+            "patron": [
+                "que pelicula me recomiendas", "quiero ver una pelicula",
+                "tienes recomendaciones de peliculas", "dime una buena pelicula",
+                "quiero ver una pelicula de accion", "que pelicula es popular"
+            ],
+            "respuesta": [
+                "Si te gustan las peliculas de accion te recomendaria ver Mad Max Fury Road",
+                "Puedes ver The Shawshank Redemption si te gustan las peliculas clasicas"
+            ]
+        },
+        {
+            "tag": "musica",
+            "patron": [
+                "que musica me recomiendas", "tienes recomendaciones de musica",
+                "escuchar musica", "quiero escuchar algo", "musica popular",
+                "cancion del momento"
+            ],
+            "respuesta": [
+                "Te recomiendo escuchar Blinding Lights de The Weeknd",
+                "Si te gustan las canciones suaves escucha Someone Like You de Adele"
+            ]
+        },
+        {
+            "tag": "deporte",
+            "patron": [
+                "como va el partido", "resultado de partido", "quien gano",
+                "resultado de futbol", "quien gano la liga", "ultimos resultados"
+            ],
+            "respuesta": [
+                "Lo siento no tengo acceso a resultados en tiempo real Puedes revisar una pagina deportiva",
+                "Te sugiero revisar aplicaciones deportivas como ESPN para ver los resultados mas recientes"
+            ]
+        },
+        {
+            "tag": "vacaciones",
+            "patron": [
+                "donde ir de vacaciones", "recomendaciones de vacaciones",
+                "me ayudas a elegir vacaciones", "a donde puedo viajar",
+                "lugares turisticos", "vacaciones 2024"
+            ],
+            "respuesta": [
+                "Te recomiendo visitar Bali si te gustan las playas o Paris si prefieres historia y cultura",
+                "Las Islas Maldivas son un destino espectacular para relajarte y disfrutar del sol"
+            ]
+        },
+        {
+            "tag": "comida",
+            "patron": [
+                "que puedo comer", "me recomiendas algo para comer", "tengo hambre",
+                "quiero comida", "que plato me sugieres", "comida deliciosa"
+            ],
+            "respuesta": [
+                "Te recomiendo probar una pizza margherita es deliciosa y ligera",
+                "Puedes probar un sushi es saludable y muy sabroso"
+            ]
+        }
+    ]
+}
