@@ -1,0 +1,42 @@
+# Este archivo contiene los diferentes puntos finales que tu bot puede usar.
+
+# Servidor desde donde se obtienen los modelos.
+# https://rasa.com/docs/rasa/user-guide/running-the-server/#fetching-models-from-a-server/
+
+#models:
+#  url: http://mi-servidor.com/models/default_core@latest
+#  wait_time_between_pulls:  10   # [opcional](por defecto: 100)
+
+# Servidor que ejecuta tus acciones personalizadas.
+# https://rasa.com/docs/rasa/core/actions/#custom-actions/
+
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Tracker store que se utiliza para almacenar las conversaciones.
+# Por defecto, las conversaciones se almacenan en memoria.
+# https://rasa.com/docs/rasa/api/tracker-stores/
+
+#tracker_store:
+#    type: redis
+#    url: <host de la instancia de redis, por ejemplo localhost>
+#    port: <puerto de tu instancia de redis, usualmente 6379>
+#    db: <número de tu base de datos dentro de redis, por ejemplo 0>
+#    password: <contraseña utilizada para la autenticación>
+#    use_ssl: <si la comunicación está cifrada o no, por defecto falso>
+
+#tracker_store:
+#    type: mongod
+#    url: <url de tu instancia de mongo, por ejemplo mongodb://localhost:27017>
+#    db: <nombre de la base de datos dentro de tu instancia de mongo, por ejemplo rasa>
+#    username: <usuario utilizado para la autenticación>
+#    password: <contraseña utilizada para la autenticación>
+
+# Event broker al que deben transmitirse todos los eventos de conversación.
+# https://rasa.com/docs/rasa/api/event-brokers/
+
+#event_broker:
+#  url: localhost
+#  username: username
+#  password: password
+#  queue: queue
