@@ -8,7 +8,7 @@ def limpiar_pantalla():
     else:  # En otros sistemas, como Unix (Linux/macOS)
         os.system('clear')
 
-genai.configure(api_key="AIzaSyD_UnXrnr9biQpWReZnBEVaQHzlHdyNpeQ")
+genai.configure(api_key="")
 
 # Create the model
 generation_config = {
