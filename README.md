@@ -27,6 +27,63 @@ Python ha pasado por varias versiones a lo largo de los anos. Algunas de las ver
 
 - **Operadores**: Python ofrece una variedad de operadores, incluyendo operadores aritmeticos, logicos, de comparacion y de asignacion. Estos operadores permiten realizar operaciones matematicas, comparaciones y manipular el flujo de control del programa.
 
+# Ejemplos segun paradigma
+
+## POO
+
+```python
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    
+    def saludar(self):
+        return f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años."
+
+# Crear un objeto de la clase Persona
+persona1 = Persona("Juan", 30)
+print(persona1.saludar())
+```
+
+## Funcional
+
+```python
+# Definicion de una funcion que usa map y filter
+def aplicar_funciones(lista):
+    # Filtrar los numeros pares y elevarlos al cuadrado
+    return list(map(lambda x: x**2, filter(lambda x: x % 2 == 0, lista)))
+
+# Usar la funcion con una lista
+lista = [1, 2, 3, 4, 5, 6]
+print(aplicar_funciones(lista))
+```
+
+## Logica
+
+```python
+def es_par(x):
+    return x % 2 == 0
+
+# Consultas logicas
+print(es_par(4))  # True
+print(es_par(7))  # False
+```
+
+## Imperativo
+
+```python
+# Ejemplo de programación imperativa
+def suma_imperativa(lista):
+    total = 0
+    for num in lista:
+        total += num
+    return total
+
+# Usar la funcion
+numeros = [1, 2, 3, 4, 5]
+print(suma_imperativa(numeros))
+```
+
 # Explicacion de que es pip
 
 pip es el sistema de gestion de paquetes de Python. Permite instalar, actualizar y gestionar librerias de terceros que no forman parte de la biblioteca estandar de Python. pip facilita la descarga e instalacion de paquetes directamente desde el Python Package Index (PyPI), un repositorio en linea que contiene miles de librerias utiles para cualquier tipo de desarrollo en Python.
