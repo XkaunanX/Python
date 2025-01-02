@@ -87,3 +87,44 @@ print(suma_imperativa(numeros))
 # Explicacion de que es pip
 
 pip es el sistema de gestion de paquetes de Python. Permite instalar, actualizar y gestionar librerias de terceros que no forman parte de la biblioteca estandar de Python. pip facilita la descarga e instalacion de paquetes directamente desde el Python Package Index (PyPI), un repositorio en linea que contiene miles de librerias utiles para cualquier tipo de desarrollo en Python.
+
+# Entornos Virtuales en Python
+
+Los entornos virtuales en Python son una forma de aislar las dependencias de un proyecto, evitando conflictos entre las versiones de librerías de diferentes proyectos. Esto permite que cada proyecto tenga su propio conjunto de dependencias sin interferir con otros proyectos o con el sistema global de Python.
+
+## ¿Por qué usar entornos virtuales?
+
+- **Aislamiento de dependencias**: Cada proyecto puede tener sus propias librerías y versiones sin interferir con otros proyectos.
+- **Compatibilidad**: Evita problemas de compatibilidad entre diferentes versiones de librerías o de Python.
+- **Facilidad de gestión**: Hace que sea más fácil gestionar dependencias cuando se trabaja en proyectos con diferentes requerimientos.
+
+## Creación de un entorno virtual
+
+1. **Instalar `venv`**: Si tienes Python 3.3 o superior, el módulo `venv` ya está incluido en la instalación estándar. Si no está disponible, puedes instalarlo en tu sistema.
+   
+2. **Crear el entorno virtual**: Dentro de la terminal, navega al directorio de tu proyecto y crea un entorno virtual. Esto generará una carpeta con el nombre del entorno, que contiene una copia aislada de Python y sus herramientas.
+
+```bash
+python3 -m venv nombre_del_entorno
+```
+
+3. **Activar el entorno virtual**: Para trabajar dentro del entorno, debes activarlo. Esto cambiará el contexto de Python a ese entorno aislado, lo que te permite instalar librerías sin afectar el entorno global.
+
+```bash
+nombre_del_entorno\Scripts\activate
+```
+
+4. **Instalar dependencias**: Una vez dentro del entorno virtual, puedes instalar las librerías necesarias para tu proyecto utilizando el administrador de paquetes `pip`.
+
+5. **Desactivar el entorno virtual**: Después de trabajar, puedes desactivar el entorno virtual para regresar al entorno global.
+
+```bash
+deactivate
+```
+
+6. **Usar un archivo de dependencias**: Para compartir las dependencias de tu proyecto o restaurarlas en el futuro, puedes generar un archivo de dependencias que pueda ser usado por otros colaboradores o en otros entornos.
+
+```bash
+pip freeze > requirements.txt
+pip install -r requirements.txt
+```
